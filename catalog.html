@@ -33,9 +33,40 @@
     <section class="select-icecream">
       <h1>Сливочное мороженое</h1>
       <!-- форма фильтров -->
-      <form>
-      <input type="submit" name="select">
-      </form> 
+      <form class="filter" method="get" action="action="https://echo.htmlacademy.ru"></form>
+     <fieldset>
+       <legend>Сортировка:</legend>
+        <select name="sort-by">
+        <option value="by-popularity">По популярности</option>
+        <option value="by-price">По цене</option>
+        </select>
+      </fieldset>
+
+        <fieldset>
+       <legend>Цена: 100 руб. - 500 руб.:</legend>
+       <input type="range" name="prices" min="100" max="500">
+        </fieldset>
+
+        <fieldset>
+       <legend>Жирность:</legend>
+       <input type="radio" name="fat-index" value="0%">
+       <input type="radio" name="fat-index" value="до 10%" checked>
+       <input type="radio" name="fat-index" value="до 30%">
+       <input type="radio" name="fat-index" value="выше 30%">
+         </fieldset>
+        
+        <fieldset>
+      <legend>Наполнители:</legend>
+      <ul>
+        <li class="fill-with"><input type="checkbox" name="chocolate" checked>шоколадные</li>
+        <li class="fill-with"><input type="checkbox" name="sugar" checked>сахарные присыпки</li>
+        <li class="fill-with"><input type="checkbox" name="fruits">фрукты</li>
+        <li class="fill-with"><input type="checkbox" name="syrups">сиропы</li>
+        <li class="fill-with"><input type="checkbox" name="jams">джемы</li>
+      </ul>
+     </fieldset>
+     <label><input type="button" name="apply">Применить</label>
+   </section>
       
       <section class="articles-list">
           <div class="icecream-item">
