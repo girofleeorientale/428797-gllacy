@@ -15,7 +15,34 @@
   			</ul>
   			<ul class="user-navigation">
   				<li><input type="search" name="search">Поиск</li>
-  				<li class="login-link">Вход</li>
+  				
+          <li>
+          <section class="modal modal-login">
+          <h2 class="visually-hidden">Личный кабинет</h2>
+          <p>Вход</p>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+              <label class="visually-hidden" for="user-login">Логин</label>
+              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+              </p>
+              <p>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                </p>
+              <p class="login-password-info">
+                <label class="login-checkbox">
+                  <input type="checkbox" name="remember" class="visually-hidden">
+                  <span class="checkbox-indicator"></span>
+                  Запомните меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+              </p>
+              <button class="button" type="submit">Войти</button>
+            </form>
+            <span class="modal-close">x</span>
+          </section>
+        </li>
+
   				<li><form>Корзина</form></li>
   			</ul>
   			<p class="header-contacts">
@@ -38,7 +65,7 @@
           <li class="advertising-item-5"><img src="img/advertising-item-5.png" width="167" height="260" alt="Пломбир с помадкой и клубничный щербет"><p>Пломбир с помадкой и клубничный щербет</p></li>
           <li class="advertising-item-6"><img src="img/advertising-item-6.png" width="167" height="260" alt="Пломбир с помадкой и клубничный щербет"><p>Пломбир с помадкой и клубничный щербет</p></li>
   			</ul>
-  			<button><img src="img/button-give.png" width="40" height="20" alt="кнопка">Давайте оба!</button>
+  			<button class="button" type="submit"><img src="img/button-give.png" width="40" height="20" alt="кнопка">Давайте оба!</button>
   		</section>
   		<section class="special-offers">
   			<h2 class="visually-hidden">Акции</h2>
@@ -46,64 +73,68 @@
   				<li class="offer-item-1">
   					<h3>Малинка даром!</h3>
   					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-  				<a class="button" href="#">Хочу варенье!</a>
+  				<button class="button" type="submit">Хочу варенье!</button>
   				</li>
   				<li class="offer-item-2">
   					<h3>Шоколадки даром!</h3>
   					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-  				<a class="button" href="#">Хочу шоколадки!</a>
+          <button class="button" type="submit">Хочу шоколадки!</button>
   				</li>
   			</ul>
   		</section>
+
   		<section class="hits">
   			<h2 class="visually-hidden">Лучшие продажи</h2>
   			<ul class="hits-list">
   				<li class="hits-item">
+            <a href="hits-item.html">
   					<h3>
-  						<a href="hits.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+  						<span class="hits-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
   					</h3>
   					<p class="hits-item-image">
-              			<a href="hits-item.html">
                       <img src="img/hit.png" width="40" height="40" alt="хит">
                 			<img src="img/icecream-1.jpg" width="120" height="120" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-             			</a>
            			</p>
+              </a>
   					<p class="hits-item-price">310 р/<span>кг</span></p>
   				</li>
+
   				<li class="hits-item">
+            <a href="hits-item.html">
   					<h3>
-  						<a href="hits.html">Сливочно-кофейное с кусочками шоколада</a>
+  						<span class="hits-item-title">Сливочно-кофейное с кусочками шоколада</span>
   					</h3>
   					<p class="hits-item-image">
-              			<a href="hits-item.html">
                       <img src="img/hit.png" width="40" height="40" alt="хит">
                 			<img src="img/icecream-2.jpg" width="120" height="120" alt="Сливочно-кофейное с кусочками шоколада">
-             			</a>
            			</p>
+              </a>
   					<p class="hits-item-price">380 р/<span>кг</span></p>
   				</li>
+
   				<li class="hits-item">
+            <a href="hits-item.html">
   					<h3>
-  						<a href="hits.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+  						<span class="hits-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
   					</h3>
   					<p class="hits-item-image">
-              			<a href="hits-item.html">
                       <img src="img/hit.png" width="40" height="40" alt="хит">
                 			<img src="img/icecream-3.jpg" width="120" height="120" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-             			</a>
            			</p>
+              </a>
   					<p class="hits-item-price">355 р/<span>кг</span></p>
   				</li>
+
   				<li class="hits-item">
+            <a href="hits-item.html">
   					<h3>
-  						<a href="hits.html">Сливочное крем-брюле с карамельной подливкой</a>
+  						<span class="hits-item-title">Сливочное крем-брюле с карамельной подливкой</span>
   					</h3>
   					<p class="hits-item-image">
-              			<a href="hits-item.html">
                       <img src="img/hit.png" width="40" height="40" alt="хит">
                 			<img src="img/icecream-4.jpg" width="120" height="120" alt="Сливочное крем-брюле с карамельной подливкой">
-             			</a>
            			</p>
+              </a>
   					<p class="hits-item-price">415 р/<span>кг</span></p>
   				</li>
   			</ul>
@@ -123,18 +154,39 @@
   			<h3><a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a></h3>
   			<p class="blog-entry-image"><img src="img/blog-entry.svg" width="70" height="80" alt="сервировка щербета"></p>
   		</section>
-  		<section class="subscribe-form">
+  		<section class="subscribe">
   			<p>Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-  			<form>
-  				<!-- форма подписки -->
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="subscribe-item">
+            <label for="subscribe-email">
+            <input id="subscribe-email" type="text" name="email" value="" placeholder="Электронная почта">
+            </label>
+          </p>
+  			<button class="button" type="submit">Отправить</button>
   			</form>
   		</section>
       </section>
-  		<section class="map">
-  			<!-- карта -->
-  		</section>
+  		<section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="780" height="340" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
   		<section class="feedback">
-  			<!-- форма обратной связи -->
+        <p>Адрес главного офиса<br>
+          и оффлайн-магазина: <br>
+        <span class="address">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span>
+        </p>
+        <p>
+          Для заказов по телефону:<br>
+          <span class="phone-number">8 812 450-25-25</span><br>
+          (с 10 до 20 ежедневно)
+        </p>
+  		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <button class="button" type="submit">Форма обратной связи</button>
+        </form> 
   		</section>
   	</main>
   	<footer class="main-footer">
