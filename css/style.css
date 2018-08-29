@@ -1,0 +1,266 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #ffffff;
+	
+	background-color: yellowgreen;
+	background-image: url("../img/background-image.jpg");
+	background-repeat: repeat;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #ffbc9e;
+}
+
+.button-choice {
+	font: inherit;
+	color: #ffffff;
+	text-align: center;
+	background-color: #eb573c;
+	background-image: url("../img/button-1.png");
+	border: none;
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 40px;
+	box-shadow: 0px 1px 11px 0px #000000;
+	text-shadow: #eb573c 2px 3px 4px;
+}
+
+.button-choice:hover,
+.button-choice:focus {
+	background-color: #eb573c;
+}
+
+.button-choice:active {
+	background-color: #eb573c;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	color: #efb89c;
+} 
+
+.slider {
+	list-style: none;
+	font-size: 60px;
+	line-height: 72px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.offer-items {
+	list-style: none;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.offer-items h3 {
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.hits-list {
+	list-style: none;
+}
+
+.hits-item-price {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.hits-item-price span {
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.hits-item-title {
+	list-style: none;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.our-advantages {
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+}
+
+.advantages-list {
+	list-style: none;
+}
+
+.our-advantages h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.blog-entry {
+	color: #323232;
+}
+
+.blog-entry h2 {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.blog-entry a {
+	text-decoration: underline;
+	font-size: 24px;
+	line-height: 30px;
+	color: inherit;
+}
+
+.subscribe {
+	font-size: 16px;
+	line-height: 22px; 
+	color: #5a5a5a;
+}
+
+.feedback {
+	color: #323232;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.coordinates {
+	color: #323232;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+
+.footer-social,
+.footer-details {
+	list-style: none;
+}
+
+.footer-social a,
+.footer-details a {
+	color: inherit;
+}
+
+.footer-social a:hover,
+.footer-social a:focus,
+.footer-details a:hover,
+.footer-details a:focus {
+	color: #ffbc9e;
+}
+
+.button-basket {
+	width: 117px;
+	height: 32px;
+	background-image: url("../img/basket-red.svg");
+	background-position: 10% 30%;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	content: "2 товара";
+	color: #000000;
+	font-weight: medium;
+	border-radius: 10px;
+	border: none;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs a {
+	color: #ffffff;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	color: #323232;
+	background-color: #ffffff;
+}
+
+h1 {
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.filer ul {
+	list-style: none;
+}
+
+.fillers {
+	list-style: none;
+}
+
+.icecream-item-title {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.icecream-item-price {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.icecream-item-price span {
+	font-size: 30px;
+	line-height: 45px;
+	}
+
+.icecream-item-title:hover {
+
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-item a {
+	color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+	color: #849d8f;
+	background-color: #ffffff;
+}

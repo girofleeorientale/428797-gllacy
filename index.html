@@ -69,8 +69,7 @@
         <input type="radio" name="slider_check" class="slider_check" id="slider_check-3"><label for="slider_check-3"
           class="slider_label">3</label><div><img src="img/advertising-3.png" width="360" height="330" alt="Пломбир с помадкой и клубничный щербет">Пломбир с помадкой и клубничный щербет</div>
       </div>
-      <button class="button" type="submit"><img src="img/button-give.png" width="40" height="20" alt="кнопка">Давайте оба!
-      </button>
+      <button class="button  button-choice" type="submit">Давайте оба!</button>
     </section>
     <section class="special-offers">
       <h2 class="visually-hidden">Акции</h2>
@@ -78,13 +77,13 @@
         <li class="offer-item-1">
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button class="button" type="submit">Хочу варенье!</button>
+          <button class="button button-choice" type="submit">Хочу варенье!</button>
         </li>
         <li class="offer-item-2">
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <button class="button" type="submit">Хочу шоколадки!</button>
+          <button class="button button-choice" type="submit">Хочу шоколадки!</button>
         </li>
       </ul>
     </section>
@@ -102,7 +101,7 @@
               <img src="img/icecream-1.jpg" width="120" height="120" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </p>
           </a>
-          <p class="hits-item-price">310 р/<span>кг</span></p>
+          <p class="hits-item-price">310<img src="img/ruble.svg">/<span>кг</span></p>
         </li>
 
         <li class="hits-item">
@@ -115,7 +114,7 @@
               <img src="img/icecream-2.jpg" width="120" height="120" alt="Сливочно-кофейное с кусочками шоколада">
             </p>
           </a>
-          <p class="hits-item-price">380 р/<span>кг</span></p>
+          <p class="hits-item-price">380<img src="img/ruble.svg">/<span>кг</span></p>
         </li>
 
         <li class="hits-item">
@@ -128,7 +127,7 @@
               <img src="img/icecream-3.jpg" width="120" height="120" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </p>
           </a>
-          <p class="hits-item-price">355 р/<span>кг</span></p>
+          <p class="hits-item-price">355 <img src="img/ruble.svg">/<span>кг</span></p>
         </li>
 
         <li class="hits-item">
@@ -141,7 +140,7 @@
               <img src="img/icecream-4.jpg" width="120" height="120" alt="Сливочное крем-брюле с карамельной подливкой">
             </p>
           </a>
-          <p class="hits-item-price">415 р/<span>кг</span></p>
+          <p class="hits-item-price">415 <img src="img/ruble.svg">/<span>кг</span></p>
         </li>
       </ul>
     </section>
@@ -182,7 +181,7 @@
               <input id="subscribe-email" type="text" name="email" value="" placeholder="Электронная почта">
             </label>
           </p>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button button-choice" type="submit">Отправить</button>
         </form>
       </section>
     </section>
@@ -196,11 +195,11 @@
 
     <section class="feedback">
       <p>Адрес главного офиса<br> и оффлайн-магазина: <br>
-        <span class="address">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span>
+        <span class="coordinates">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span>
       </p>
       <p>
         Для заказов по телефону:<br>
-        <span class="phone-number">8 812 450-25-25</span><br> (с 10 до 20 ежедневно)
+        <span class="coordinates">8 812 450-25-25</span><br> (с 10 до 20 ежедневно)
       </p>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
@@ -215,13 +214,13 @@
           <label for="comment">Комментарий</label>
           <textarea name="comment" id="comment" rows=5></textarea>
         </p>
-        <button class="button" type="submit">Форма обратной связи</button>
+        <button class="button button-choice" type="submit">Форма обратной связи</button>
       </form>
     </section>
   </main>
   <footer class="main-footer">
     <div class="footer-social">
-      <ul>
+      <ul class="footer-social">
         <li><a class="social-button" href="#">Твиттер</a></li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -229,7 +228,7 @@
       </ul>
     </div>
     <div class="footer-details">
-      <ul>
+      <ul class="footer-details">
         <li><a class="details-item" href="#">Для поставщиков</a></li>
         <li><a class="details-item" href="#">О производстве</a></li>
         <li><a class="details-item" href="#">Наши документы</a></li>

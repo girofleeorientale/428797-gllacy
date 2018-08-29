@@ -12,7 +12,7 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="60" height="35" alt="Логотип Gllacy Shop"></a>
+            <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop"></a>
             <ul class="site-navigation">
                 <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
                 <li><a href="delivery-purchase.html">Доставка и оплата</a></li>
@@ -20,10 +20,10 @@
             </ul>
             <ul class="user-navigation">
                 <li>
-                    <input type="search" name="search">Поиск</li>
+                    <input type="search" name="search"><img src="img/loupe.svg">Поиск</li>
                 <section class="modal modal-login">
                     <h2 class="visually-hidden">Личный кабинет</h2>
-                    <p>Вход</p>
+                    <p><img src="img/entrance.svg"> Вход</p>
                     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                         <p>
                             <label class="visually-hidden" for="user-login">Логин</label>
@@ -47,7 +47,9 @@
                 </li>
 
                 <li>
-                    <form>Корзина</form>
+                    <form>
+                      <button class="button button-basket" type="submit">2 товара</button>
+                    </form>
                 </li>
             </ul>
             <p class="header-contacts">
@@ -89,7 +91,7 @@
 
       <fieldset>
     <legend>Наполнители:</legend>
-    <ul>
+    <ul class="fillers">
       <li class="fill-with"><input type="checkbox" name="chocolate" checked><label for="chocolate">шоколадные</label></li>
       <li class="fill-with"><input type="checkbox" name="sugar" checked><label for="sugar">сахарные присыпки</label></li>
       <li class="fill-with"><input type="checkbox" name="fruits"><label for="fruits">фрукты</label></li>
@@ -111,7 +113,7 @@
                     <img src="img/icecream-1.jpg" width="200" height="200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </p>
           </a>
-          <p class="icecream-item-price">310 р/<span>кг</span></p>
+          <p class="icecream-item-price">310<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -123,7 +125,7 @@
                     <img src="img/icecream-2.jpg" width="200" height="200" alt="Сливочно-кофейное с кусочками шоколада">
               </p>
             </a>
-          <p class="icecream-item-price">380 р/<span>кг</span></p>
+          <p class="icecream-item-price">380<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -135,7 +137,7 @@
                     <img src="img/icecream-3.jpg" width="200" height="200" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </p>
             </a>
-          <p class="icecream-item-price">355 р/<span>кг</span></p>
+          <p class="icecream-item-price">355<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -147,7 +149,7 @@
                     <img src="img/icecream-4.jpg" width="200" height="200" alt="Сливочное крем-брюле с карамельной подливкой">
               </p>
             </a>
-          <p class="icecream-item-price">415 р/<span>кг</span></p>
+          <p class="icecream-item-price">415<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -159,7 +161,7 @@
                     <img src="img/icecream-5.jpg" width="200" height="200" alt="Сливочное с брусничным джемом">
               </p>
             </a>
-          <p class="icecream-item-price">325 р/<span>кг</span></p>
+          <p class="icecream-item-price">325<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -171,7 +173,7 @@
                     <img src="img/icecream-6.jpg" width="200" height="200" alt="Сливочно-черничное с цельными ягодами черники">
               </p>
             </a>
-          <p class="icecream-item-price">410 р/<span>кг</span></p>
+          <p class="icecream-item-price">410<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -183,7 +185,7 @@
                     <img src="img/icecream-7.jpg" width="200" height="200" alt="Сливочно-лимонное с карамельной присыпкой">
               </p>
             </a>
-          <p class="icecream-item-price">375 р/<span>кг</span></p>
+          <p class="icecream-item-price">375<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -195,7 +197,7 @@
                     <img src="img/icecream-8.jpg" width="200" height="200" alt="Сливочное с шоколадной стружкой">
               </p>
             </a>
-          <p class="icecream-item-price">320 р/<span>кг</span></p>
+          <p class="icecream-item-price">320<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -207,7 +209,7 @@
                     <img src="img/icecream-9.jpg" width="200" height="200" alt="Сливочно-ванильное с кусочками шоколада">
               </p>
             </a>
-          <p class="icecream-item-price">440 р/<span>кг</span></p>
+          <p class="icecream-item-price">440<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -219,7 +221,7 @@
                     <img src="img/icecream-10.jpg" width="200" height="200" alt="Сливочное с ментоловым сиропом">
               </p>
             </a>
-          <p class="icecream-item-price">435 р/<span>кг</span></p>
+          <p class="icecream-item-price">435<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -231,7 +233,7 @@
                     <img src="img/icecream-11.jpg" width="200" height="200" alt="Сливочное с кусочками черного шоколада">
               </p>
             </a>
-          <p class="icecream-item-price">355 р/<span>кг</span></p>
+          <p class="icecream-item-price">355<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -243,7 +245,7 @@
                     <img src="img/icecream-12.jpg" width="200" height="200" alt="Сливочное с мятным сиропом">
               </p>
             </a>
-          <p class="icecream-item-price">420 р/<span>кг</span></p>
+          <p class="icecream-item-price">420<img src="img/ruble.svg">/<span>кг</span></p>
         </div>
       </section>
       <ul class="pagination-list">
@@ -257,7 +259,7 @@
     </main>
     <footer class="main-footer">
         <div class="footer-social">
-            <ul>
+            <ul class="footer-social">
                 <li><a class="social-button" href="#">Твиттер</a></li>
                 <li><a class="social-button" href="#">Инстаграм</a></li>
                 <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -265,7 +267,7 @@
             </ul>
         </div>
         <div class="footer-details">
-            <ul>
+            <ul class="footer-details">
                 <li><a class="details-item" href="#">Для поставщиков</a></li>
                 <li><a class="details-item" href="#">О производстве</a></li>
                 <li><a class="details-item" href="#">Наши документы</a></li>
