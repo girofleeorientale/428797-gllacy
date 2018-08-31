@@ -23,31 +23,60 @@ a:focus {
 	color: #ffbc9e;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button-choice {
-	font: inherit;
-	color: #ffffff;
-	text-align: center;
-	background-color: #eb573c;
-	background-image: url("../img/button-1.png");
+  	font-size: 30.765px;
+  	font-family: "Roboto";
+  	color: rgb(255, 255, 255);
+  	font-weight: bold;
+  	line-height: 1.375;
+  	text-align: center;
+  	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+	background-image: linear-gradient(90deg, #e74a35, #f26843);
 	border: none;
 	font-size: 18px;
-	line-height: 24px;
 	border-radius: 40px;
-	box-shadow: 0px 1px 11px 0px #000000;
-	text-shadow: #eb573c 2px 3px 4px;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .64);
+	padding: 13px 17px;
 }
 
 .button-choice:hover,
 .button-choice:focus {
-	background-color: #eb573c;
+  	background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(242,104,67) 100%);
+  	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+  	font-family: "Roboto";
+  	color: rgb(255, 255, 255);
+  	font-weight: bold;
+  	text-align: center;
+  	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
+
 
 .button-choice:active {
-	background-color: #eb573c;
-}
-
-.visually-hidden {
-	display: none;
+  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);;
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+  font-family: "Roboto";
+  color: rgb(252, 238, 236);
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .main-navigation {
@@ -74,17 +103,24 @@ a:focus {
 } 
 
 .slider {
-	list-style: none;
-	font-size: 60px;
-	line-height: 72px;
-	font-weight: bold;
-	text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+}
 }
 
 .offer-items {
 	list-style: none;
 	font-size: 18px;
 	line-height: 22px;
+}
+
+.offer-items li {
+	list-style: none;
 }
 
 .offer-items h3 {
@@ -117,6 +153,7 @@ a:focus {
 	font-size: 16px;
 	line-height: 22px;
 	color: #323232;
+	background-image: url("../img/waffel-layer.jpg");
 }
 
 .advantages-list {
@@ -130,6 +167,14 @@ a:focus {
 
 .blog-entry {
 	color: #323232;
+	background-image: url("../img/strawberry-layer.jpg");
+	background-repeat: no-repeat;
+}
+
+.blog-entry img {
+	width: 866px;
+	height: 790px;
+	padding: 0;
 }
 
 .blog-entry h2 {
