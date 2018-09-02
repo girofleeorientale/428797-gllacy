@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	min-width: 1200px;
 
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
@@ -39,6 +40,11 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.main-header-logo {
+	 width: 154px;
+	  height: 64px; 
 }
 
 .button-choice {
@@ -80,14 +86,28 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation {
+	display: flex;
+	flex-direction: flex-start;
+	justify-content: space-between;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 355px;
+	min-height: 25px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
 }
 
-.site-navigation,
 .user-navigation {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	width: 249px;
+	height: 35px;
 }
 
 .site-navigation a,
@@ -113,14 +133,42 @@ input[type="radio"].visually-hidden {
 }
 }
 
+.special-offers {
+	
+}
+
 .offer-items {
+	display: -webkit-flex; 
+	-webkit-justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	padding: 0;
+	margin-left: 20px;
+
 	list-style: none;
 	font-size: 18px;
 	line-height: 22px;
+	font-weight: bold;
 }
 
-.offer-items li {
-	list-style: none;
+.offer-item-1 {
+  background-image: url("../img/raspberry.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.offer-item-2 {
+  background-image: url("../img/chocolate.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  text-align: left;
+
 }
 
 .offer-items h3 {
@@ -129,7 +177,22 @@ input[type="radio"].visually-hidden {
 }
 
 .hits-list {
+	display: flex;
+	justify-content: space-between;
 	list-style: none;
+	width: 1146px;
+}
+
+.hits-item {
+	width: 267px
+	height: 332px;
+	text-align: center;
+	padding: 0;
+	margin: 5px;
+}
+
+.hits-item p {
+
 }
 
 .hits-item-price {
@@ -274,6 +337,24 @@ h1 {
 
 .fillers {
 	list-style: none;
+}
+
+.articles-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.articles-list div {
+	display: flex;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+.icecream-item {
+	width: 280px;
+	min-height: 285px;
+	margin-bottom: 20px;
+	margin-right: 20px;
 }
 
 .icecream-item-title {
