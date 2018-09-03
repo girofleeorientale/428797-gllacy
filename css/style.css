@@ -14,6 +14,7 @@ body {
 	background-repeat: repeat;
 }
 
+
 a {
 	color: #ffffff;
 	text-decoration: none;
@@ -44,7 +45,9 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
 	 width: 154px;
-	  height: 64px; 
+	  height: 64px;
+	  margin-left: 27px;
+	  margin-top: 17px; 
 }
 
 .button-choice {
@@ -88,27 +91,47 @@ input[type="radio"].visually-hidden {
 .main-navigation {
 	display: flex;
 	flex-direction: flex-start;
-	justify-content: space-between;
+	justify-content: stretch;
+	align-items: stretch;
+	flex-wrap: wrap;
 }
 
 .site-navigation {
-	margin: 0;
 	padding: 0;
 	list-style: none;
-	width: 355px;
+	width: 500px;
 	min-height: 25px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
 }
 
+.site-navigation li {
+	display: inline;
+	margin-left: 20px;
+	margin-bottom: 30px;
+  	background-image: linear-gradient(#ffffff, transparent 80%);
+  	background-position: 0 1.04em;
+  	background-repeat: repeat-x;
+  	background-size: 10px 3px;
+}
+
+.site-navigation a
+.user-navigation a {
+	display: inline;
+	vertical-align: middle;
+}
+
 .user-navigation {
-	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 30px;
 	padding: 0;
 	list-style: none;
 	width: 249px;
 	height: 35px;
 }
+
 
 .site-navigation a,
 .user-navigation a {
@@ -122,15 +145,41 @@ input[type="radio"].visually-hidden {
 	color: #efb89c;
 } 
 
-.slider {
-  width: 700px;
-  margin: 0 auto;
-  margin-bottom: 27px;
-  
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 800;
+.user-navigation .login-link {
+	position: relative;
+	padding-left: 50px;
+	background-color: rgba(255, 255, 255, 0.2);
 }
+
+.login-link::before {
+	content: "";
+
+	position: absolute;
+	top: 7px;
+	left: 16px;
+	width: 24px;
+	height: 20px;
+
+	background-image: url(../img/entrance.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: rgba(255, 255, 255, 0.2);
+
+	opacity: 0.3;
+}
+
+.slider {
+  	width: 700px;
+  	margin: 0 auto;
+  	margin-bottom: 27px;
+  
+  	font-size: 60px;
+  	line-height: 60px;
+  	font-weight: 800;
+}
+
+.slider::before {
+	background-image: url("../img/light.png");
 }
 
 .special-offers {
@@ -142,6 +191,7 @@ input[type="radio"].visually-hidden {
 	-webkit-justify-content: space-between;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 1200px;
 	padding: 0;
 	margin-left: 20px;
@@ -178,17 +228,19 @@ input[type="radio"].visually-hidden {
 
 .hits-list {
 	display: flex;
-	justify-content: space-between;
 	list-style: none;
 	width: 1146px;
+	margin-left: 27px;
 }
 
 .hits-item {
+	display: flex;
+	justify-content: space-around;
 	width: 267px
 	height: 332px;
 	text-align: center;
 	padding: 0;
-	margin: 5px;
+	margin-right: 5px;
 }
 
 .hits-item p {
@@ -196,6 +248,9 @@ input[type="radio"].visually-hidden {
 }
 
 .hits-item-price {
+	position: relative;
+	top: 253px;
+	left: -250px;
 	font-size: 45px;
 	line-height: 45px;
 }
@@ -210,13 +265,18 @@ input[type="radio"].visually-hidden {
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 22px;
+	order: 2;
 }
 
 .our-advantages {
 	font-size: 16px;
 	line-height: 22px;
+	width: 1146px;
+	margin-left: 27px;
+
 	color: #323232;
-	background-image: url("../img/waffel-layer.jpg");
+	background-image: url("../img/waffel-layer.png");
+	background-repeat: no-repeat;
 }
 
 .advantages-list {
@@ -228,15 +288,22 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 }
 
+.blog-subscribe-forms {
+	display: flex;
+	width: 1146px;
+	justify-content: space-between;
+	margin-left: 27px;
+}
+
 .blog-entry {
 	color: #323232;
-	background-image: url("../img/strawberry-layer.jpg");
+	width: 560px;
+	height: 222px;
+	background-image: url("../img/strawberry.png");
 	background-repeat: no-repeat;
 }
 
 .blog-entry img {
-	width: 866px;
-	height: 790px;
 	padding: 0;
 }
 
@@ -253,9 +320,27 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe {
+	width: 560px;
+	height: 223px;
 	font-size: 16px;
 	line-height: 22px; 
 	color: #5a5a5a;
+	background-image: url("../img/post.png"),
+					  url("../img/layer-subscribe.png");
+	background-repeat: no-repeat;
+}
+
+.modal-map::before {
+	content: "";
+	width: 83px;
+	height: 41px;
+	position: relative;
+	top: 50px;
+	left: 50px;
+
+	background-image: url("../img/pin.svg");
+  	background-repeat: no-repeat;
+  	background-position: 0 0;
 }
 
 .feedback {
@@ -389,4 +474,8 @@ h1 {
 .pagination-item a:active {
 	color: #849d8f;
 	background-color: #ffffff;
+}
+
+.modal-login {
+	display: none;
 }
