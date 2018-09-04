@@ -4,104 +4,123 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+
     <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop"></a>
-            <ul class="site-navigation">
-                <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-                <li><a href="delivery-purchase.html">Доставка и оплата</a></li>
-                <li><a href="about-us">О компании</a></li>
-            </ul>
-            <ul class="user-navigation">
-                <li>
-                    <input type="search" name="search"><img src="img/loupe.svg">Поиск</li>
-                <section class="modal modal-login">
-                    <h2 class="visually-hidden">Личный кабинет</h2>
-                    <p><img src="img/entrance.svg"> Вход</p>
-                    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                        <p>
-                            <label class="visually-hidden" for="user-login">Логин</label>
-                            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-                        </p>
-                        <p>
-                            <label class="visually-hidden" for="user-password">Пароль</label>
-                            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-                        </p>
-                        <p class="login-password-info">
-                            <label class="login-checkbox">
-                                <input type="checkbox" name="remember" class="visually-hidden">
-                                <span class="checkbox-indicator"></span> Запомните меня
-                            </label>
-                            <a class="restore" href="#">Я забыл пароль!</a>
-                        </p>
-                        <button class="button" type="submit">Войти</button>
-                    </form>
-                    <span class="modal-close">x</span>
-                </section>
-                </li>
-
-                <li>
-                    <form>
-                      <button class="button button-basket" type="submit">2 товара</button>
-                    </form>
-                </li>
-            </ul>
-            <p class="header-contacts">
-                С 10 до 20, ежедневно
-                <br>
-                <span class="phone-number">8 812 450-25-25</span>
-            </p>
-        </nav>
-    </header>
+<body class="inner-page">
+     <header class="main-header">
+    <div class="header-info">
+      <div class="main-logo">
+    <a class="main-header-logo" href="index.html"><img src="img/Logo.png" width="154" height="64" alt="Логотип Gllacy Shop"></a>
+  </div>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="delivery-purchase.html">Доставка и оплата</a></li>
+        <li><a href="about-us.html">О Компании</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li><input type="search" name="search">Поиск</li>
+        <li><a class="login-link" href="login.html">Вход</a>
+          <section class="modal modal-login">
+            <h2 class="visually-hidden">Личный кабинет</h2>
+            <p>Вход</p>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <p class="login-password-info">
+                <label class="login-checkbox">
+                  <input type="checkbox" name="remember" class="visually-hidden">
+                  <span class="checkbox-indicator"></span>
+                  Запомните меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+              </p>
+              <button class="button" type="submit">Войти</button>
+            </form>
+            <span class="modal-close">x</span>
+          </section>
+        </li>
+        <li>
+          <form>Корзина</form>
+        </li>
+      </ul>
+      <p class="header-contacts">
+        С 10 до 20, ежедневно<br>
+        <span class="phone-number">8 812 450-25-25</span>
+      </p>
+    </nav>
+  </div>
+  </header>
     <main class="container">
         <ul class="breadcrumbs">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="index.html">Главная  »</a></li>
+            <li><a href="catalog.html">Каталог  »</a></li>
             <li class="breadcrumbs-current">Сливочное</li>
         </ul>
         <section class="select-icecream">
-            <h1>Сливочное мороженое</h1>
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-    <fieldset>
-      <legend>Сортировка:</legend>
-      <select name="sort-by ">
-      <option value="by-popularity">По популярности</option>
-      <option value="by-price">По цене</option>
-      </select>
-    </fieldset>
-
+   <h1>Сливочное мороженое</h1>
+   <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+    <div class="sort-wrapper">
+      <div class="sort">
       <fieldset>
-      <legend>Цена: 100 руб. - 500 руб.:</legend>
-      <input type="range" name="prices" min="100" max="500">
+         <legend>Сортировка:</legend>
+         <div class="sort-background">
+         <select name="sort-by">
+            <option value="by-popularity">По популярности</option>
+            <option value="by-price">По цене</option>
+         </select>
+       </div>
       </fieldset>
-
+    </div>
+    <div class="sort">
       <fieldset>
-      <legend>Жирность:</legend>
-      <input type="radio" name="fat-index" value="0%">
-      <input type="radio" name="fat-index" value="до 10%" checked>
-      <input type="radio" name="fat-index" value="до 30%">
-      <input type="radio" name="fat-index" value="выше 30%">
-        </fieldset>
-
+         <legend>Цена: 100 руб. - 500 руб.:</legend>
+         <div class="sort-background">
+         <input type="range" name="prices" min="100" max="500">
+       </div>
+      </fieldset>
+    </div>
+    <div class="sort">
       <fieldset>
-    <legend>Наполнители:</legend>
-    <ul class="fillers">
-      <li class="fill-with"><input type="checkbox" name="chocolate" checked><label for="chocolate">шоколадные</label></li>
-      <li class="fill-with"><input type="checkbox" name="sugar" checked><label for="sugar">сахарные присыпки</label></li>
-      <li class="fill-with"><input type="checkbox" name="fruits"><label for="fruits">фрукты</label></li>
-      <li class="fill-with"><input type="checkbox" name="syrups"><label for="syrups">сиропы</label></li>
-      <li class="fill-with"><input type="checkbox" name="jams"><label for="jams">джемы</label></li>
-    </ul>
-    </fieldset>
-    <button type="submit" class="filter-button button">Применить</button>
-  </form>
-  </section>
+         <legend>Жирность:</legend>
+         <div class="sort-background">
+         <input type="radio" name="fat-index" value="0%">
+         <input type="radio" name="fat-index" value="до 10%" checked>
+         <input type="radio" name="fat-index" value="до 30%">
+         <input type="radio" name="fat-index" value="выше 30%">
+       </div>
+      </fieldset>
+    </div>
+    <div class="sort">
+      <fieldset>
+         <legend>Наполнители:</legend>
+         <div class="sort-background">
+         <ul class="fillers">
+            <li class="fill-with"><input type="checkbox" name="chocolate" checked><label for="chocolate">шоколадные</label></li>
+            <li class="fill-with"><input type="checkbox" name="sugar" checked><label for="sugar">сахарные присыпки</label></li>
+            <li class="fill-with"><input type="checkbox" name="fruits"><label for="fruits">фрукты</label></li>
+            <li class="fill-with"><input type="checkbox" name="syrups"><label for="syrups">сиропы</label></li>
+            <li class="fill-with"><input type="checkbox" name="jams"><label for="jams">джемы</label></li>
+         </ul>
+       </div>
+      </fieldset>
+    </div>
+      <div class="sort">
+      <button type="submit" class="filter-button button">Применить</button>
+      </div>
+  </div>
+   </form>
+</section>
 
     <section class="articles-list">
         <div class="icecream-item">
@@ -113,7 +132,7 @@
                     <img src="img/icecream-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </p>
           </a>
-          <p class="icecream-item-price">310<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">310 &#8381;/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -125,7 +144,7 @@
                     <img src="img/icecream-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               </p>
             </a>
-          <p class="icecream-item-price">380<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">380 &#8381;/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -137,7 +156,7 @@
                     <img src="img/icecream-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </p>
             </a>
-          <p class="icecream-item-price">355<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">355 &#8381;/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -149,7 +168,7 @@
                     <img src="img/icecream-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               </p>
             </a>
-          <p class="icecream-item-price">415<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">415&#8381; /<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -161,7 +180,7 @@
                     <img src="img/icecream-5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
               </p>
             </a>
-          <p class="icecream-item-price">325<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">325 &#8381;/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -173,7 +192,7 @@
                     <img src="img/icecream-6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
               </p>
             </a>
-          <p class="icecream-item-price">410<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">410 &#8381;/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -185,7 +204,7 @@
                     <img src="img/icecream-7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
               </p>
             </a>
-          <p class="icecream-item-price">375<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">375 &#8381;/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -197,7 +216,7 @@
                     <img src="img/icecream-8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
               </p>
             </a>
-          <p class="icecream-item-price">320<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">320 &#8381;/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -209,7 +228,7 @@
                     <img src="img/icecream-9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
               </p>
             </a>
-          <p class="icecream-item-price">440<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">440 &#8381;/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -221,7 +240,7 @@
                     <img src="img/icecream-10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
               </p>
             </a>
-          <p class="icecream-item-price">435<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">435 &#8381;/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -233,7 +252,7 @@
                     <img src="img/icecream-11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
               </p>
             </a>
-          <p class="icecream-item-price">355<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">355 &#8381;/<span>кг</span></p>
         </div>
 
         <div class="icecream-item">
@@ -245,7 +264,7 @@
                     <img src="img/icecream-12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
               </p>
             </a>
-          <p class="icecream-item-price">420<img src="img/ruble.svg">/<span>кг</span></p>
+          <p class="icecream-item-price">420 &#8381;/<span>кг</span></p>
         </div>
       </section>
       <ul class="pagination-list">
@@ -257,29 +276,28 @@
                 </ul>
         </section>
     </main>
-    <footer class="main-footer">
-        <div class="footer-social">
-            <ul class="footer-social">
-                <li><a class="social-button" href="#">Твиттер</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-            </ul>
-        </div>
-        <div class="footer-details">
-            <ul class="footer-details">
-                <li><a class="details-item" href="#">Для поставщиков</a></li>
-                <li><a class="details-item" href="#">О производстве</a></li>
-                <li><a class="details-item" href="#">Наши документы</a></li>
-                <li><a class="details-item" href="#">Экологические стандарты</a></li>
-            </ul>
-        </div>
-        <div>
-            <p class="footer-copyright">
-                <b>Сделано в</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a> &#9400 2017.
-            </p>
-        </div>
-    </footer>
+  <footer class="main-footer">
+    <div class="footer-social">
+      <ul class="footer-social">
+        <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span><img src="img/twitter.svg" width="38" height="38"></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span><img src="img/instagram.svg" width="38" height="38"></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden"> Фейсбук</span><img src="img/fb.svg" width="38" height="38"></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span><img src="img/vk.svg" width="38" height="38"></a></li>
+      </ul>
+    </div>
+    <div class="footer-details">
+      <ul class="footer-details">
+        <li><a class="details-item" href="#">Для поставщиков</a></li>
+        <li><a class="details-item" href="#">О производстве</a></li>
+        <li><a class="details-item" href="#">Наши документы</a></li>
+        <li><a class="details-item" href="#">Экологические стандарты</a></li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+        <img src="img/logo-htmlacademy.svg" width="110px" heght="41px" alt="Лого html Academy">
+        <b>Сделано в</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a> &#9400 2017.
+    </div>
+  </footer>
 </body>
 
 </html>
