@@ -23,12 +23,27 @@
   </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a>
+          <ul class="sub-menu">
+            <li>Новинки</li>
+            <li>Сливочное</li>
+            <li>Щербеты</li>
+            <li>Фруктовый лед</li>
+            <li>Мелорин</li>
+          </ul>
+        </li>
         <li><a href="delivery-purchase.html">Доставка и оплата</a></li>
         <li><a href="about-us.html">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><input type="search" name="search" class="visually-hidden"><span class="visually-hidden">Поиск</span></li>
+        <li><input type="search" name="search" id="search" class="visually-hidden"><span class="visually-hidden">Поиск</span>
+          <section class="modal modal-search">
+            <h2 class="visually-hidden">Поиск</h2>
+                <label class="visually-hidden" for="user-search">поиск</label>
+                <input id="user-search" type="text" name="user-search" placeholder="Что ищем?">
+
+          </section>
+        </li>
         <li><a class="login-link" href="login.html"><span class="entrance">Вход</span></a>
           <section class="modal modal-login">
             <h2 class="visually-hidden">Личный кабинет</h2>
@@ -102,15 +117,23 @@
       <h2 class="visually-hidden">Акции</h2>
       <ul class="offer-items">
         <li class="offer-item-1">
+          <div class="offer-item-text">
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        </div>
+        <div class="button-offer">
           <button class="button button-choice" type="submit">Хочу варенье!</button>
+        </div>
         </li>
         <li class="offer-item-2">
+          <div class="offer-item-text">
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
+        </div>
+        <div class="button-offer">
           <button class="button button-choice" type="submit">Хочу шоколадки!</button>
+        </div>
         </li>
       </ul>
     </section>
@@ -191,22 +214,25 @@
     </section>
     <section class="blog-subscribe-forms">
       <section class="blog-entry">
+        <div class="brog-entry-wrapper">
         <h2>Новое в нашем блоге</h2>
         <h3><a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a></h3>
         <p class="blog-entry-image"></p>
+      </div>
       </section>
       <section class="subscribe">
         <div class="subscribe-layer">
-        <p>Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить
+          <div class="subscribe-content">
+        <p class="subscribe-explain">Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить
           и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="subscribe-item">
-            <label for="subscribe-email">
-              <input id="subscribe-email" type="text" name="email" value="" placeholder="Электронная почта">
-            </label>
+            <label for="subscribe-email" class="visually-hidden">e-mail</label>
+              <input class="subscribe-post" id="subscribe-email" type="text" name="email" value="" placeholder="Электронная почта">
           </p>
           <button class="button button-choice" type="submit">Отправить</button>
         </form>
+      </div>
       </div>
       </section>
     </section>
