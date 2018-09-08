@@ -10,7 +10,8 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="inner-page">
+<body>
+  <div class="inner-page">
       <header class="main-header">
     <div class="header-info">
       <div class="main-logo">
@@ -18,7 +19,7 @@
   </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li class="button-choice"><a href="catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
         <li><a href="delivery-purchase.html">Доставка и оплата</a></li>
         <li><a href="about-us.html">О Компании</a></li>
       </ul>
@@ -72,12 +73,12 @@
    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
     <div class="sort-wrapper">
       <div class="sort">
-      <fieldset>
+      <fieldset class="field-sort">
          <legend>Сортировка:</legend>
          <div class="sort-background">
          <select name="sort-by">
-            <option value="by-popularity">По популярности</option>
-            <option value="by-price">По цене</option>
+            <option value="by-popularity">по популярности</option>
+            <option value="by-price">по цене</option>
          </select>
        </div>
       </fieldset>
@@ -110,12 +111,13 @@
          <legend>Наполнители:</legend>
          <div class="sort-background">
          <ul class="fillers">
-            <li class="fill-with"><input type="checkbox" name="chocolate" id="chocolate" checked><label for="chocolate"><img class="img-checkbox">шоколадные</label></li>
-            <li class="fill-with"><input type="checkbox" name="sugar" id="sugar" checked><label for="sugar"><img src="img/checkbox-on.svg" alt="чекбокс" width="27" height="22">сахарные присыпки</label></li>
-            <li class="fill-with"><input type="checkbox" name="fruits" id="fruits"><label for="fruits"><img src="img/checkbox-off.svg" alt="чекбокс" width="22" height="22">фрукты</label></li>
-            <li class="fill-with"><input type="checkbox" name="syrups" id="syrups"><label for="syrups"><img src="img/checkbox-off.svg" alt="чекбокс" width="22" height="22">сиропы</label></li>
-            <li class="fill-with"><input type="checkbox" name="jams" id="jams"><label for="jams"><img src="img/checkbox-off.svg" alt="чекбокс" width="22" height="22">джемы</label></li>
-         </ul>
+                  <li class="fill-with"><input type="checkbox" class='checkbox' name="chocolate" id="chocolate" checked><label for="chocolate"><span></span>шоколадные</label></li>
+                  <li class="fill-with"><input type="checkbox" class='checkbox' name="sugar" id="sugar" checked><label for="sugar"><span></span>сахарные присыпки</label></li>
+                  <li class="fill-with"><input type="checkbox" class='checkbox' name="fruits" id="fruits"><label for="fruits"><span></span>фрукты</label></li>
+                  <li class="fill-with"><input type="checkbox" class='checkbox' name="syrups" id="syrups"><label for="syrups"><span></span>сиропы</label></li>
+                  <li class="fill-with"><input type="checkbox" class='checkbox' name="jams" id="jams"><label for="jams"><span></span>джемы</label></li>
+                </ul>
+
        </div>
       </fieldset>
     </div>
@@ -127,15 +129,18 @@
 </section>
 
     <section class="articles-list">
-        <div class="icecream-item">
+          <div class="icecream-item">
           <a href="icecream-item.html">
                     <img src="img/icecream-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <div class="icecream-price-holder">
           <p class="icecream-item-price">310 &#8381;/<span>кг</span></p>
+        </div>
           <h3>
             <span class="icecream-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
           </h3>
           </a>
         </div>
+
 
         <div class="icecream-item">
           <a href="icecream-item.html">
@@ -149,7 +154,6 @@
 
         <div class="icecream-item">
           <a href="icecream-item.html">
-          </h3>
                     <img src="img/icecream-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p class="icecream-item-price">355 &#8381;/<span>кг</span></p>
           <h3>
@@ -283,7 +287,7 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#9400 2017</p>
     </div>
     </div>
-  </footer>
+  </footer></div>
 </body>
 
 </html>

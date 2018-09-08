@@ -11,6 +11,11 @@
 </head>
 
 <body>
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
+      <div class="container">
   <header class="main-header">
     <div class="header-info">
       <div class="main-logo">
@@ -27,11 +32,11 @@
         <li><a class="login-link" href="login.html"><span class="entrance">Вход</span></a>
           <section class="modal modal-login">
             <h2 class="visually-hidden">Личный кабинет</h2>
-            <p>Вход</p>
+            <p class="visually-hidden">Вход</p>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <p>
-                <label class="visually-hidden" for="user-login">Логин</label>
-                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+                <label class="visually-hidden" for="user-login">e-mail</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
               </p>
               <p>
                 <label class="visually-hidden" for="user-password">Пароль</label>
@@ -40,13 +45,16 @@
               <p class="login-password-info">
                 <label class="login-checkbox">
                   <input type="checkbox" name="remember" class="visually-hidden">
-                  <span class="checkbox-indicator"></span>
-                  Запомните меня
                 </label>
-                <a class="restore" href="#">Я забыл пароль!</a>
-              </p>
-              <button class="button" type="submit">Войти</button>
-            </form>
+                </p>
+                <div class="modal-login-choice">
+                  <button class="button button-choice" type="submit">Войти</button>
+                  <div class="password-registration">
+                <a class="restore" href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+ </div>
+ </form>
             <span class="modal-close">x</span>
           </section>
         </li>
@@ -61,22 +69,35 @@
     </nav>
   </div>
   </header>
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Мороженое Gllacy</h1>
-    <section class="main-advertising">
-      <h2 class="visually-hidden">Купить в 1 клик</h2>
-      <div class="slider">
-        <input type="radio" name="slider_check" class="slider_check" id="slider_check-1" checked><label for="slider_check-1"
-          class="slider_label">1</label><div><img src="img/advertising-1.png" width="651" height="597" alt="Крем-брюле и пломбир с малиновым джемом">Крем-брюле и пломбир с малиновым джемом</div>
-        <input type="radio" name="slider_check" class="slider_check" id="slider_check-2"><label for="slider_check-2"
-          class="slider_label">2</label><div><img src="img/advertising-2.png" width="651" height="597"  alt="Шоколадный пломбир и лимонный сорбет">Шоколадный пломбир и лимонный сорбет</div>
-        <input type="radio" name="slider_check" class="slider_check" id="slider_check-3"><label for="slider_check-3"
-          class="slider_label">3</label><div><img src="img/advertising-3.png" width="651" height="597" alt="Пломбир с помадкой и клубничный щербет">Пломбир с помадкой и клубничный щербет</div>
-      </div>
-      <div class="button-advertising">
-      <button class="button  button-choice" type="submit">Давайте оба!</button>
-    </div>
-    </section>
+    <section class="slider">
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+        </section>
     <section class="special-offers">
       <h2 class="visually-hidden">Акции</h2>
       <ul class="offer-items">
@@ -255,6 +276,8 @@
     </div>
     </div>
   </footer>
+</div>
+</div>
 </body>
 
 </html>
